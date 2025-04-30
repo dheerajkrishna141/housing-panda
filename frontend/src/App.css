@@ -1,0 +1,131 @@
+.room-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1920px) {
+  .room-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .room-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.room-card-container {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 2rem;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, scale 0.3s ease;
+}
+.room-card-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  scale: 1.001;
+  transition: box-shadow 0.1s ease, scale 0.1s ease;
+}
+.room-card-container p,
+h3 {
+  margin: 0;
+}
+
+.room-card-image {
+  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9c9c9;
+}
+
+.listing-form {
+  display: grid;
+  grid-template-columns: repeat(1, 0.5fr);
+  gap: 40px;
+
+  align-items: center;
+}
+
+.listing-form input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.listing-form textarea {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.listing-form label {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.radio label {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ef6e32;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d65f2c;
+}
+
+.button:active {
+  scale: 0.98;
+  transition: scale 0.1s ease;
+}
+
+.listing-form button {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ef6e32;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .listing-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
