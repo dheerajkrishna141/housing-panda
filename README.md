@@ -1,5 +1,5 @@
 ## Overview
-This repository contains the solution for the problem statement; Backend application which is implemented both in Spring Framework and ExpressJs and a dedicated frontend which holds the UI for displaying and creating a listing.
+This repository contains the solution for the problem statement. It includes a backend application implemented in both Spring Framework and Express.js, as well as a dedicated frontend for displaying and creating listings.
 
 ### Listings view
 <img src="screenshots/viewListings.png" width="600">
