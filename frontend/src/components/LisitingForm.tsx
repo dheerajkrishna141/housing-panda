@@ -11,7 +11,7 @@ const LisitingForm = () => {
     const listing: ListingEntry = {
       title: data.title,
       description: data.description,
-      propertyType: data.propertyType,
+      property_type: data.propertyType,
       address: {
         apt_no: data.apt_no,
         street_address: data.street_address,

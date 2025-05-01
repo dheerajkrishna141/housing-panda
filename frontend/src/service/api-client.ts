@@ -18,7 +18,7 @@ export interface ContactInfo {
 export interface ListingEntry {
   title: string;
   description: string;
-  propertyType: "APARTMENT" | "HOUSE" | "CONDO" | "TOWNHOUSE";
+  property_type: "APARTMENT" | "HOUSE" | "CONDO" | "TOWNHOUSE";
   gender: "MALE" | "FEMALE" | "ANY";
   bedrooms: number;
   bathrooms: number;

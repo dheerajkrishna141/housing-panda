@@ -10,7 +10,7 @@ const RoomCard = ({ listing }: RoomCardProps) => {
       <div className="room-card-image">Image.</div>
       <h3>{listing.title}</h3>
       <p>
-        {listing.propertyType} / {listing.bedrooms} bed / {listing.bathrooms}{" "}
+        {listing.property_type} / {listing.bedrooms} bed / {listing.bathrooms}{" "}
         bath
       </p>
       <p>${listing.price} / Month</p>
