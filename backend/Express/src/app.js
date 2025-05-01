@@ -2,9 +2,12 @@ import { log } from "console";
 import express from "express";
 import cors from "cors";
 import { getListings, postListing } from "./database.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const corsOptions = {
-  origin: "http://localhost:5173", // Adjust this to your frontend's URL
+  origin: process.env.CORS_ORIGIN,
   methods: "*",
   allowedHeaders: "*",
 };
